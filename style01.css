@@ -1,0 +1,173 @@
+/* utility class */
+h1 {
+    font-size: 3rem;
+    padding: 38px;
+
+}
+
+h2 {
+    font-size: 2rem;
+    padding: 38px;
+}
+
+.center {
+    text-align: center;
+
+}
+
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+}
+
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+
+
+
+
+/* Navigation Bar list styling */
+
+
+
+#navbar ul {
+    display: flex;
+
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 25px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 0px 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+#navbar ul li a:hover {
+    color: white;
+    /* color: black; */
+    font-size: 25.5px;
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid red;
+
+
+}
+#navbar ul li a{
+    cursor:url(img.png),auto;
+    }
+    
+
+/* section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before {
+    content: "";
+    background: url(farm.jpg) no-repeat center/cover;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    padding: 15px;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    border-left: 2px solid whitesmoke;
+    border-right: 2px solid whitesmoke;
+    border-radius: 6px;
+    margin-bottom: 40px;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        border: 2px solid whitesmoke;
+        border-left: 2px solid red;
+    }
+    25%{
+        border: 2px solid whitesmoke;
+        border-top: 2px solid red;
+    }
+    75%{
+        border: 2px solid whitesmoke;
+        border-right: 2px solid red;
+    }
+    100%{
+        border: 2px solid whitesmoke;
+        border-bottom: 2px solid red;
+    }
+}
+
+#home p {
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    border-left: 2px solid whitesmoke;
+    border-bottom: 2px solid red;
+}
+
+
+
+
+
+footer {
+    background-color: black;
+    color: honeydew;
+    position: absolute;
+
+    border-bottom: 2px solid black;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
